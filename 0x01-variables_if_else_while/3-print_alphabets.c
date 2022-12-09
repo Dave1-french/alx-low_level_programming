@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(cat);
 	}
-	for (cat='A'; cat <= 'Z'; cat++)
+	for (cat = 'A'; cat <= 'Z'; cat++)
 	{
 		putchar(cat);
 	}
