@@ -8,18 +8,13 @@
  */
 int main(void)
 {
-	char cat, e, q;
+	char cat;
 
-	e = 'e';
-	q = 'q';
 	for (cat = 'z'; cat <= 'a'; cat--)
 	{
-		if (cat != e && cat != q)
-		{
-			putchar(cat);
-		}
+		putchar(cat);
 	}
-	putchar('\n');
+		putchar('\n');
 
 	return (0);
 }
