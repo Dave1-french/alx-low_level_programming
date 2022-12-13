@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_sign - Entry point
+ * print_sign - Entry point
  * Description: 'function that prints the sign of a number'
  * @n: the character to be checked.
  *
@@ -20,7 +20,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else (n < 0)
+	else
 	{
 		_putchar('-');
 		return (-1);
