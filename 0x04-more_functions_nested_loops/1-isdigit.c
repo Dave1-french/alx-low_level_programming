@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - Entry point
- * Description: 'function that checks for a digit (0 through 9'
+ * Description: 'function that checks for a digit (0 through 9)'
  * @c: checked digit
  * Return: 1 if c is a digit or 0 otherwise
  */
