@@ -12,8 +12,8 @@ void print_most_numbers(void)
 	char c;
 
 	do {
-		for (c = '0'; c <= '9'; c++)
-			_putchar(c);
-	} while (c != 2 && c != 4)
+	for (c = '0'; c <= '9'; c++)
+		_putchar(c);
+	} while (c != '2' && c != '4')
 	_putchar('\n');
 }
