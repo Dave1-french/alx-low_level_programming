@@ -8,7 +8,7 @@
 
 void print_triangle(int size)
 {
-	int i, j, a, ro = 0;
+	int i, j, a, ro = 0, cal = 0;
 
 	ro = --size;
 	if (size <= 0)
