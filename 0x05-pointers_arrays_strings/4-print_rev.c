@@ -7,7 +7,8 @@
 
 void print_rev(char *s)
 {
-	int i, som = 0, a;
+	int som = 0;
+	int i, a;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -16,7 +17,8 @@ void print_rev(char *s)
 
 	for (a = (som - 1); a >= 0; a--)
 	{
-		_putchar(str[a]);
+		_putchar(s[a]);
 	}
 	_putchar('\n');
 }
+
