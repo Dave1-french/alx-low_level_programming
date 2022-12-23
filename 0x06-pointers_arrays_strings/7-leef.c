@@ -8,21 +8,22 @@
  */
 char *leet(char *n)
 {
-	int index, j;
-	char minus[] = {'a', 'e', 'o', 't', 'l', '\0'};
-	char mayus[] = {'A', 'E', 'O', 'T', 'L', '\0'};
-	char numbers[] = {'4', '3', '0', '7', '1', '\0'};
+	int i, x;
+	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int replacer[] = {'4', '3', '0', '7', '1'};
 
-	for (index = 0; n[index] != '\0'; ++index)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (x = 0; x <= 9; x++)
 		{
-			if (n[index] == minus[j] || n[index] == mayus[j])
+			if (n[i] == find[x])
 			{
-				n[index] = numbers[j];
+				n[i] = replacer[x / 2];
+				x = 9;
 			}
 		}
 	}
+
 	return (n);
 }
 
