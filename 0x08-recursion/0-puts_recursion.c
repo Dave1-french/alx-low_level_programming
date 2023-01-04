@@ -11,7 +11,10 @@ void _puts_recursion(char *s)
 	int i, a = 1;
 
 	while (s[i] != '\0')
+	{
 		a++;
+		i++;
+	}
 	for (i = 0; i < a; i++)
 	{
 		_putchar(s[i]);
