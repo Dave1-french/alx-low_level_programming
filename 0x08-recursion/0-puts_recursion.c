@@ -8,14 +8,11 @@
 
 void _puts_recursion(char *s)
 {
-	int i, a = 0;
+	int i, a = 0, e;
 
-	while (s[i] != '\0')
-	{
+	for (e = 0; s[e] != '\0'; e++)
 		a++;
-		i++;
-	}
-	for (i = 0; i < a; i++)
+	for (i = 0; i <= a; i++)
 	{
 		_putchar(s[i]);
 	}
