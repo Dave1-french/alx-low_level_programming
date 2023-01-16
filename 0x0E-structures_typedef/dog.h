@@ -18,6 +18,6 @@ struct dog
 };
 
 typedef struct dog dog_info;
-dog_info *new_dog(char *name, float age, char *owner);
+
 
 #endif
