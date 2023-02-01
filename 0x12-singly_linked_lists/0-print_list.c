@@ -1,39 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
- * main - check the code
+ * print_listint - prints the elements in linked list
+ * @h: head of listint_t type
  *
- * Return: Always 0
+ * Return: size_t, number of nodes.
  */
-int main(void)
+size_t print_listint(const listint_t *h)
 {
-	list_t *head;
-	list_t *new;
-	list_t hello = {"World", 5, NULL};
-	size_t n;
+	size_t n_nodes = 0;
+	const listint_t *temp_h;
 
-	head = &hello;
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	temp_h = h;
+	while (temp_h)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", temp_h->n);
+		temp_h = temp_h->next;
+		n_nodes++;
 	}
-	new->str = strdup("Hello");
-	new->len = 5;
-	new->next = head;
-	head = new;
-	n = print_list(head);
-	printf("->%lu elements\n", n);
-
-	printf("\n");
-	free(new->str);
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
-
-	free(new);
-	return (0);
+	return (n_nodes);
 }
